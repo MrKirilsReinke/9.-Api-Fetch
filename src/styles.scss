@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --c-main-accent: #495157;
+  --c-secondary: #2d3031;
+  --c-txtcolor-1: #ffffff;
+  --c-txtcolor-2: #87888a;
+}
+
+body {
+  max-width: 95rem;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  background-color: var(--c-main-accent)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.rickmortypic {
+  width: 43.75rem;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3.125rem;
+  grid-template-rows: auto;
+  grid-row-gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 18.75rem 1fr;
+  background-color: var(--c-secondary);
+  color: var(--c-txtcolor-1);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.image {
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.cardtext {
+  padding: 1.25rem 0.9375rem;
+  align-items: center;
+}
+
+.greytext {
+  color: var(--c-txtcolor-2);
+  font-size: 1rem;
+}
+
+.links {
+  color: var(--c-txtcolor-1);
+  text-decoration: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 0rem 1.25rem 0rem 1.25rem;
+}
+
+.button {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.625rem;
+  background-color: var(--c-secondary);
+  border: 1px solid var(--c-secondary);
+  color: var(--c-txtcolor-1);
+  font-size: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1428px) {
+  body {
+    max-width: 43.75rem;
+    font-size: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 18.75rem;
+    text-align: center;
+  }
+}
